@@ -46,6 +46,12 @@ The dataset has an imbalanced class distribution.
 
 This class imbalance should be considered when training and evaluating models. We recommend reporting class-sensitive metrics, including macro-averaged F1-score and balanced accuracy, alongside overall accuracy.
 
+## Loading the Labels
+
+When loading the dataset, use the parent folder name as the image's emotion label. For example, an image stored in Happy/ receives the label Happy.
+
+Researchers should preserve this folder structure when preparing the dataset for training and evaluation.
+
 ## Research Framework
 
 The associated study introduces **EQFormer**, an emotion recognition framework designed to combine spatial feature enhancement with emotion-query-based Transformer decoding.
